@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Enter Year Of Birth"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.52"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.308" android:textSize="24sp" android:textStyle="bold"
+            android:textColor="@android:color/background_dark"/>
+    <TextView
+            android:text="Your Age : 0"
+            android:layout_width="384dp"
+            android:layout_height="54dp"
+            android:id="@+id/tvAge"
+            android:background="#FFED804E"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.525" android:textAlignment="center"
+            android:textColor="@android:color/background_dark" android:textSize="30sp" android:textStyle="bold"
+            android:shadowColor="@color/colorPrimary"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/inputYear" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            android:layout_marginTop="44dp" app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+    <Button
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputYear"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:onClick="onSubmit" android:background="@color/colorAccent"
+            android:textColor="@android:color/background_dark"/>
+
+</android.support.constraint.ConstraintLayout>
